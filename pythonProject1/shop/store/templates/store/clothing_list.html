@@ -1,0 +1,10 @@
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Фільтрувати</button>
+</form>
+
+<ul>
+    {% for item in clothing_items %}
+        <li>{{ item.name }} - {{ item.type }}</li>
+    {% endfor %}
+</ul>
